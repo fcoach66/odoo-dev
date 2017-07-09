@@ -8,8 +8,8 @@
 		<form string="To-do Task"> 
 
         <header> 
-			<button name="do_toggle_done_2" type="object" string="Toggle Done" class="oe_highlight" /> 
-			<button name="do_clear_done_2" type="object"  string="Clear All Done" /> 
+			<button name="do_toggle_done" type="object" string="Toggle Done" class="oe_highlight" /> 
+			<button name="do_clear_done" type="object"  string="Clear All Done" /> 
 		</header> 
 		<sheet> 
 			<group name="group_top"> 
