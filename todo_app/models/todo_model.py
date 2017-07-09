@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*- 
 from odoo import models, fields, api
+
 class TodoTask(models.Model): 
     _name = 'todo.task' 
     _description = 'To-do Task'
@@ -10,7 +11,7 @@ class TodoTask(models.Model):
 @api.multi 
 def do_toggle_done(self): 
 	for task in self: 
-	task.is_done = not task.is_done 
+		task.is_done = not task.is_done 
 return True
 
 @api.model 
