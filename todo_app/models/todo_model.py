@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from odoo import models, fields, api
 
 class TodoTask(models.Model): 
@@ -18,4 +19,3 @@ class TodoTask(models.Model):
         dones = self.search([('is_done', '=', True)]) 
         dones.write({'active': False}) 
         return True
-
