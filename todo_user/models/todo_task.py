@@ -9,10 +9,10 @@ class TodoTask(models.Model):
 	
     @api.multi 
     def do_clear_done(self): 
-    domain = [('is_done', '=', True), '|', ('user_id', '=', self.env.uid), ('user_id', '=', False)] 
-    dones = self.search(domain) 
-    dones.write({'active': False}) 
-    return True
+      domain = [('is_done', '=', True), '|', ('user_id', '=', self.env.uid), ('user_id', '=', False)] 
+      dones = self.search(domain) 
+      dones.write({'active': False}) 
+      return True
 	
     # ...
     # class TodoTask(models.Model):
@@ -22,5 +22,5 @@ class TodoTask(models.Model):
         for task in self: 
             if task.user_id != self.env.user: 
                 raise ValidationError('Only the responsible can do this!') 
-    return super(TodoTask, self).do_toggle_done()
+      return super(TodoTask, self).do_toggle_done()
 
