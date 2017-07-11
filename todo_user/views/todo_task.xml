@@ -40,7 +40,7 @@
       <filter name="filter_my_tasks" string="My Tasks" domain="[('user_id','in',[uid,False])]" /> 
       <filter name="filter_not_assigned" string="Not Assigned" domain="[('user_id','=',False)]" /> 
     </field>
-  </field 
+  </field>
 </record>	  
 
 </odoo>
