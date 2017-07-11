@@ -1,5 +1,4 @@
-<record id="view_form_todo_task_inherited"   
-  model="ir.ui.view"> 
+<record id="view_form_todo_task_inherited" model="ir.ui.view"> 
 	<field name="name">Todo Task form - User extension</field> 
 	<field name="model">todo.task</field> 
 	<field name="inherit_id" ref="todo_app.view_form_todo_task"/> 
@@ -15,8 +14,4 @@
 			<attribute name="invisible">1</attribute> 
 		</field> 
 	</field>
-
-
-
- 
 </record>
