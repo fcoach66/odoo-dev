@@ -7,5 +7,6 @@
  "version": "10.0.1.0.0",
  "depends": ['todo_app'],
  "author": 'fcoach66',
+ "data": ["views/todo_task.xml"],
  "installable": True,
  "active": False, }
