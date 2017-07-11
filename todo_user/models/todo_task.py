@@ -14,13 +14,13 @@ class TodoTask(models.Model):
     dones.write({'active': False}) 
     return True
 	
-	# ...
-	# class TodoTask(models.Model):
-	# ...
-	@api.multi 
-	def do_toggle_done(self): 
-		for task in self: 
-			if task.user_id != self.env.user: 
-				raise ValidationError(
-					'Only the responsible can do this!') 
-	return super(TodoTask, self).do_toggle_done()
+    # ...
+    # class TodoTask(models.Model):
+    # ...
+    @api.multi 
+    def do_toggle_done(self): 
+        for task in self: 
+            if task.user_id != self.env.user: 
+                raise ValidationError('Only the responsible can do this!') 
+    return super(TodoTask, self).do_toggle_done()
+
