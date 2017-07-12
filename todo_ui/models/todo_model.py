@@ -17,7 +17,7 @@ class Stage(models.Model):
         [('draft','New'), ('open','Started'),
         ('done','Closed')],'State') 
     docs = fields.Html('Documentation')
-	# Numeric fields: 
+    # Numeric fields:
     sequence = fields.Integer('Sequence') 
     perc_complete = fields.Float('% Complete', (3, 2)) 
     # Date fields: 
