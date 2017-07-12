@@ -7,6 +7,6 @@
  "version": "10.0.1.0.0",
  "depends": ['todo_app', 'mail'],
  "author": 'fcoach66',
- "data": ["views/todo_task.xml"],
+ "data": ["views/todo_task.xml", "security/todo_access_rules.xml"],
  "installable": True,
  "active": False, }
