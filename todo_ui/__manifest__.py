@@ -4,5 +4,5 @@
 'author': 'fcoach66',
 'depends': ['todo_user'] 
 'installable': True,
- 'active': False, 
+'active': False, 
  }
