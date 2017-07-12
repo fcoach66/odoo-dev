@@ -11,5 +11,5 @@ class Stage(models.Model):
   _description = 'To-do Stage'
   _order = 'sequence,name'
 name = fields.Char('Name', 40, translate=True)
-  sequence = fields.Integer('Sequence')
+sequence = fields.Integer('Sequence')
 
