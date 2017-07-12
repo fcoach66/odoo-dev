@@ -10,6 +10,6 @@ class Stage(models.Model):
   _name = 'todo.task.stage'
   _description = 'To-do Stage'
   _order = 'sequence,name'
-  name = fields.Char('Name', 40, translate=True)
+name = fields.Char('Name', 40, translate=True)
   sequence = fields.Integer('Sequence')
 
