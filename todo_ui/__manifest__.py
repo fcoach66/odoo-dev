@@ -7,6 +7,6 @@
  'description': 'User friendly features.',
  'author': 'fcoach66',
  'depends': ['todo_user'] 
- 'installable': True,
- 'active': False
+ "installable": True,
+ "active": False
 }
